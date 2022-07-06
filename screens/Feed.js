@@ -4,7 +4,7 @@ import { RFValue } from 'react-native-responsive-fontsize';
 let stories = require("./temp_stories.json");
 export default class Feed extends Component {
     renderItem = ({ item: story }) => {
-        return <StoryCard story={story} />;
+        return <StoryCard post={story} />;
       };
     
       keyExtractor = (item, index) => index.toString();
